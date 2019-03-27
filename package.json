@@ -1,10 +1,10 @@
 {
-	"name": "record-vbb-delays",
-	"description": "Record VBB departures.",
+	"name": "record-db-delays",
+	"description": "Record DB departures.",
 	"version": "3.0.0",
 	"main": "index.js",
 	"bin": {
-		"record-vbb-delays": "./cli.js"
+		"record-db-delays": "./cli.js"
 	},
 	"files": [
 		"index.js",
@@ -12,32 +12,30 @@
 		"lib"
 	],
 	"keywords": [
-		"vbb",
-		"bvg",
+		"db",
 		"public",
-		"transport",
-		"berlin"
+		"transport"
 	],
-	"author": "Jannis R <mail@jannisr.de>",
-	"homepage": "https://github.com/derhuerst/record-vbb-delays",
-	"repository": "derhuerst/record-vbb-delays",
-	"issues": "https://github.com/derhuerst/record-vbb-delays/issues",
+	"author": "Mark Hähnel <hello@markhaehnel.de>",
+	"homepage": "https://github.com/markhaehnel/record-db-delays",
+	"repository": "markhaehnel/record-db-delays",
+	"issues": "https://github.com/markhaehnel/record-db-delays/issues",
 	"license": "ISC",
 	"engines": {
 		"node": ">=6"
 	},
 	"dependencies": {
-		"ansi-diff-stream": "^1.2.0",
+		"ansi-diff-stream": "^1.2.1",
 		"ansi-escapes": "^3.0.0",
-		"bvg-hafas": "^1.1.0",
+		"db-hafas": "^3.1.0",
 		"hafas-monitor-departures": "^2.2.0",
 		"hafas-record-delays": "^3.0.0-alpha.1",
-		"mri": "^1.1.0",
+		"mri": "^1.1.4",
 		"pump": "^3.0.0",
-		"vbb-stations": "^6.3.0"
+		"db-stations": "^2.11.0"
 	},
 	"scripts": {
-		"build": "pkg -c package.json --public cli.js -o dist/record-vbb-delays",
+		"build": "pkg -c package.json --public cli.js -o dist/record-db-delays",
 		"install": "node lib/generate-install-id.js >id.json"
 	},
 	"devDependencies": {
