@@ -2,6 +2,7 @@
 
 **Record DB departures.**
 
+[![npm version](https://img.shields.io/npm/v/record-db-delays.svg)](https://www.npmjs.com/package/record-db-delays)
 ![ISC-licensed](https://img.shields.io/github/license/markhaehnel/record-db-delays.svg)
 
 ## Installing
